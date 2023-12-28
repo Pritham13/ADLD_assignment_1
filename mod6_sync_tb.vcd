@@ -1,5 +1,5 @@
 $date
-	Thu Dec 28 23:47:03 2023
+	Thu Dec 28 23:51:48 2023
 $end
 $version
 	Icarus Verilog
@@ -7,15 +7,15 @@ $end
 $timescale
 	1ps
 $end
-$scope module mod9_async_tb $end
-$var wire 5 ! y [4:0] $end
+$scope module mod6_sync_tb $end
+$var wire 4 ! y [3:0] $end
 $var reg 1 " clk $end
 $var reg 1 # rst $end
 $scope module uut $end
 $var wire 1 " clk $end
 $var wire 1 # rst $end
-$var reg 5 $ counter [4:0] $end
-$var reg 5 % y [4:0] $end
+$var reg 4 $ counter [3:0] $end
+$var reg 4 % y [3:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -86,35 +86,35 @@ b101 $
 #95000
 b101 !
 b101 %
-b110 $
+b0 $
 1"
 #100000
 0"
 #105000
-b110 !
-b110 %
-b111 $
+b0 !
+b0 %
+b1 $
 1"
 #110000
 0"
 #115000
-b111 !
-b111 %
-b1000 $
+b1 !
+b1 %
+b10 $
 1"
 #120000
 0"
 #125000
-b1000 !
-b1000 %
-b0 $
+b10 !
+b10 %
+b11 $
 1"
 #130000
 0"
 #135000
-b0 !
-b0 %
-b1 $
+b11 !
+b11 %
+b100 $
 1"
 #140000
 0"
