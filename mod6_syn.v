@@ -1,7 +1,7 @@
 module mod6_sync(input clk,rst,
 			output reg [3:0]y);
 reg [3:0]counter=0;
-always @ (posedge clk)
+always @ (posedge clk or posedge rst)
 	begin
 		if (rst)
 			begin
